@@ -96,8 +96,7 @@ function quizStart(){
      var levels = 1;
 
      //seconds div
-        $(".innerC").append("<p class='seconds ga-maamli-regular'></p>");
-        cntSec();
+        $(".innerC").append("<p class='seconds ga-maamli-regular'></p>")
        
 
       //questions div
@@ -144,7 +143,6 @@ function quizStart(){
                   var num1 = Math.floor(Math.random() * 25)+1;
                   var randomMethod = Math.floor(Math.random() * 4); 
                   displayQuestions(num1,num2,randomMethod);
-                  cntSec();
                    num3 =num4++;
                    $(".levels").html(`<h2 class='caveat'>Question ${num3}</h2>`);
                   var answer2 = getAnswer(num1,num2,randomMethod);
@@ -227,53 +225,6 @@ function displayQuestions(num1,num2,randomMethod){
     
 }
 
- 
-
-function cntSec(){
-      var sec = 60;
-      $(".seconds").html(sec);
-      setTimeout(function(){
-            sec = 50
-            $(".seconds").html(sec);
-      },10000);
-
-      setTimeout(function(){
-            sec = 40;
-            
-            $(".seconds").html(sec);
-      },20000);
-
-      setTimeout(function(){
-                 sec = 30;
-          //   sec-=10;
-             $(".seconds").html(sec);
-      },30000);
-
-      setTimeout(function(){
-               sec =20;
-             //sec-=10;
-             $(".seconds").html(sec);
-      },40000);
-
-      setTimeout(function(){
-            sec =10;
-             //sec-=10;
-            $(".seconds").html(sec);
-      },50000);
-
-      setTimeout(function(){
-               sec = 0;
-              $(".seconds").html(sec);
-              alert("Time run-out");
-      },60000);
-
-      
-
-
-      
-}
-
-
 
 function wrong(){
    var audio = new Audio("./sounds/wrong.mp3");
@@ -284,5 +235,6 @@ function correct(){
    var audio = new Audio("./sounds/correct.mp3");
    audio.play()
 }
+
 
 //done!
