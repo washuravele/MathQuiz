@@ -90,8 +90,8 @@ It is built using ** HTML, CSS, and JavaScript**, focusing on logic, user intera
 ---
 ✨ Future Improvements
 *	Add multiple questions with scoring
-* Include timer and progress tracking
-* Enhance accessibility and localization
+*  Include timer and progress tracking
+*  Enhance accessibility and localization
 ---
 
 
